@@ -1,0 +1,99 @@
+.SinglePost{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 15px;
+    /* position: absolute; */
+    z-index: 1000;
+    width: 100%;
+    border: solid red;
+}
+.singlePostWrapper{
+    padding: 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.SinglePost .imgDiv{
+    width: 100%;
+    height: 20rem;
+}
+.SinglePost .imgDiv img{
+    border-radius: .5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.singlePostTitle{
+    text-align: center;
+    margin: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+.singlePostTitleInput{
+    text-align: center;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color: gray;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+.singlePostTitleInput:focus{
+    outline: none;
+}
+
+.singlePostEdit{
+    float: right;
+    color: #444;
+    font-size: 1.4rem;
+}
+.singlePostTitle .singlePostEdit i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.singlePostTitle .singlePostEdit i:first-child{
+    color: teal;
+}
+.singlePostTitle .singlePostEdit i:last-child{
+    color: tomato;
+}
+.singlePostInfo{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #b3656b;
+}
+.singlePostDesc{
+    color: #666;
+    font-size: 17px;
+    line-height: 25px;
+}
+.singlePostDesc::first-letter{
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family:sans-serif;
+}
+
+.singlePostDescInput{
+    border: none;
+    color: #666;
+    font-size: 17px;
+    line-height: 25px;
+}
+.singlePostDescInput:focus{
+    outline: none;
+}
+.singlePostButton{
+    width: 100px;
+    border: none;
+    background-color: teal;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}

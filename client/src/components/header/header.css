@@ -1,0 +1,36 @@
+body{
+    background-color: #eee;
+}
+.header{
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.headerTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444;
+}
+.headerTitlesSm{
+    position: absolute;
+    top: 18%;
+    font-size: 20px;
+}
+.headerTitlesLg{
+    position: absolute;
+    top: 18%;
+    z-index: 1;
+    font-size: 180px;
+    color: #00002d;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-family: fantasy;
+    padding: 0px 75px;
+}
+.headerImg{
+    opacity: .8;
+    width: 100%;
+    height: 480px;
+    margin-top: 80px;
+    object-fit: cover;
+}

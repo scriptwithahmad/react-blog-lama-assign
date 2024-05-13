@@ -1,0 +1,7 @@
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 80%;
+    /* background-color: #1d9bf0; */
+}

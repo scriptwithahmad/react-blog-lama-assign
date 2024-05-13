@@ -1,0 +1,59 @@
+.login{
+    height: calc(97vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+     linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        transparent
+     ),
+     url("https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?size=626&ext=jpg&ga=GA1.1.1572214017.1676789510&semt=ais");
+    background-size: cover;
+}
+.loginTitle{
+    font-size: 50px;
+}
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.loginForm > label {
+    margin: 10px 0;
+}
+.loginInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+.loginButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+}
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: rgb(255, 176, 147);
+}
+
+.loginRegisterButton{
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    background-color: teal;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.loginRegisterButton:hover{
+    opacity: .9;
+}

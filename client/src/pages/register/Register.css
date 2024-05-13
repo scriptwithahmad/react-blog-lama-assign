@@ -1,0 +1,61 @@
+.Register{
+    height: calc(97vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:
+     linear-gradient(
+        rgba(19, 11, 88, 0.981),
+        rgba(255, 255, 255, 0.667)
+     ),
+     url("https://www.shutterstock.com/image-illustration/glowing-digital-lock-world-map-600w-1802285125.jpg");
+    background-size: cover;
+}
+.registerTitle{
+    font-size: 50px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.registerForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+.registerForm > label {
+    margin: 10px 0;
+}
+.registerInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+.registerButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+}
+.registerLoginButton{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: tomato;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.registerLoginButton:hover{
+    opacity: .9;
+}
+.error{
+    margin-top: 10px;
+    color: red;
+    font-size: 13px;
+}

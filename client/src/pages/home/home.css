@@ -1,0 +1,15 @@
+.home{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:30px;
+    padding: 50px calc(20px + 1vw);
+}
+
+
+
+@media (max-width:992px) {
+    .home{
+        grid-template-columns: 1fr;
+    }
+}

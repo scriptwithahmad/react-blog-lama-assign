@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+.sidebar{
+    overflow: hidden;
+    padding-bottom: 30px;
+    background-color: #eee;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 10%);
+    border-radius: 10px;
+    /* margin-left: 1.8rem; */
+    height: 100vh;
+    height: max-content;
+    width: 100%;
+}
+.sidebarItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebarImg{
+    width: 15rem;
+    margin-bottom: 1.2rem;
+}
+.sidebarTitle{
+    margin: 10px;
+    padding: 12px;
+    width: 45%;
+    border-top: 1px solid #d1cccc; 
+    border-bottom: 1px solid #d1cccc; 
+    text-align: center;
+    color: #333;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+.sidebar .sidebarImg{
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.sidebar .para{
+    padding: 0px 35px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.sidebarList{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.sidebarlistItem{
+    font-family: 'Delicious Handrawn';
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
+.sidebarSocial{
+    margin-top: 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebarIcon{
+    font-size: 22px;
+    margin-left: 12px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.sidebarIcon:hover{
+    color: blue;
+    transform: scale(1.2) translateY(-4px);
+}
