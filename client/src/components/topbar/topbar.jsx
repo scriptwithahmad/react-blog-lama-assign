@@ -10,7 +10,7 @@ const Topbar = () => {
   const PF = "http://localhost:5000/images/";
 
   const handleLogout = () => {
-    const confirm = window.confirm("are you sure you Logout this");
+    const confirm = window.confirm("are you sure you Logout this Account!");
     if (confirm === true) {
       dispatch({
         type: "LOGOUT",

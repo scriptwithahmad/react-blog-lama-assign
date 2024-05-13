@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Topbar from "./components/topbar/topbar";
 import { useContext } from "react";
 import { Context } from "./context/Context";
+import NotFound from "./components/NotFound"
 
 const App = () => {
   const { user } = useContext(Context);
@@ -18,14 +19,12 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/register" element={user ? <Home /> : <Register />} />
         <Route path="/login" element={user ? <Home /> : <Login />} />
         <Route path="/write" element={user ? <Write /> : <Register />} />
         <Route path="/settings" element={user ? <Settings /> : <Register />} />
         <Route path="/post/:postId" element={<Single />} />
-
-        {/* <Route path="*" element={"404 Page Not Found"} /> */}
+        <Route path="*" Component={NotFound} />
       </Routes>
     </BrowserRouter>
   );

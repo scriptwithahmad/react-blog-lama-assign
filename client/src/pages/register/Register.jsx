@@ -18,23 +18,16 @@ function Register() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("/auth/register", {
-        username,
+      const res = await axios.post("http://localhost:3000/auth/register", {
         email,
+        username,
         password,
       });
-      res.data && window.location.replace("/login");
+      console.log(res);
+      res.data && window.location.replace("/");
     } catch (err) {
+      console.log(err)
       setError(true);
-    }
-  };
-
-  const notify = () => {
-    // const toast = toast.success("Register Successfuly");
-    if (toast === true) {
-      toast.success("Register Successfuly");
-    } else {
-      toast.error("Fill The Form");
     }
   };
 
@@ -73,7 +66,7 @@ function Register() {
           className="registerButton"
           type="submit"
           data-aos="zoom-in-up"
-          onClick={notify}
+          // onClick={notify}
         >
           Register
         </button>

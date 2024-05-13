@@ -88,6 +88,7 @@ function Settings() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button className="settingsSubmit" type="submit">
+            {/* <Link className="settingsSubmit" style={{textDecoration: "none"}} to="/settings"> Update </Link> */}
             <Link className="settingsSubmit" style={{textDecoration: "none"}} to="/settings"> Update </Link>
           </button>
         </form>

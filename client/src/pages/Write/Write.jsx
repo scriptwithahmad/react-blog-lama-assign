@@ -32,7 +32,9 @@ function Write() {
       const res = axios.post("/posts", newPost);
       window.location.replace("/post" + res.data._id);
       // window.location.replace("/");
-    } catch (err) {}
+    } catch (err) {
+      console.log(err)
+    }
   };
 
   // Tost Here
